@@ -1,1 +1,32 @@
+* {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(auto-fit, 1fr) minmax(auto-fit, 4fr);
+}
 
+.container div {
+    padding: 15px;
+    font-size: 32px;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgba(91, 160, 238, 0.733);
+}
+
+.header {
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: whitesmoke;
+}
+
+.main {
+    background-color: lightgray;
+    grid-column: 2;
+    grid-row: 2;
+}
