@@ -19,7 +19,6 @@ html, body {
 .container div {
     padding: 5px;
     color: white;
-    font-size: medium;
 }
 
 .sidebar {
@@ -30,10 +29,11 @@ html, body {
 }
 
 .logo {
+    grid-area: 1 / 1 / 2 / 2;
     display: grid;
     align-items: center;
     justify-content: left;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     background-color: rgba(91, 160, 238, 0.733);
 }
