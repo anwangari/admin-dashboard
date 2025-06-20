@@ -18,7 +18,7 @@
                     <li>History</li>
                     <li>Tasks</li>
                     <li>Communities</li>
-                    <li></li>
+                    <span style="height: 20px;"></span>
                     <li>Settings</li>
                     <li>Support</li>
                     <li>Privacy</li>
@@ -26,26 +26,38 @@
             </div>
         </div>
         <div class="header">
-            <div class="top-left">
-                <div class="icon" id="search-icon">Q</div>
-                <div class="search-bar">Search Bar</div>
-            </div>
-            <div class="top-right">
-                <div class="icon" id="notification">@!</div>
-                <div class="profile-photo" id="top-photo"><img src="images/tony-photo.png" alt="Profile photo of admin"></div>
-                <div class="name" id="top-name">Anthony Njuguna</div>
-            </div>
-            <div class="bottom-left">
-                <div class="profile-photo" id="bottom-photo"><img src="images/tony-photo.png" alt="Profile photo of admin"></div>
-                <div class="greeting">Hi there</div>
-                <div class="name" id="bottom-name">Anthony Njuguna (@tonynjuguna)</div>
-            </div>
-            <div class="bottom-right">
-                <ul><button>New</button><button>Upload</button><button>Share</button></ul>
+            <!-- Top row: search & profile summary -->
+            <div class="header-top">
+                <div class="search-area">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search..." class="search-bar" />
+                </div>
+          
+                <div class="profile-summary">
+                    <span class="notif-icon">🔔</span>
+                    <div class="profile-photo"><img src="images/tony-photo.png" alt="Profile" /></div>
+                    <span class="profile-name">Anthony Njuguna</span>
+                </div>
+                </div>
+          
+                <!-- Bottom row: greeting & buttons -->
+                <div class="header-bottom">
+                <div class="greeting-area">
+                    <div class="profile-photo"><img src="images/tony-photo.png" alt="Profile" /></div>
+                    <div class="greeting-text">
+                    <p class="greeting">Hi there,</p>
+                    <p class="username"><strong>Anthony Njuguna</strong> (@tonynjuguna)</p>
+                    </div>
+                </div>
+          
+                <div class="action-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
         <div class="main">
-            <!-- Projects Section -->
             <section class="projects-section">
               <h2>Your Projects</h2>
               <div class="projects-grid">
